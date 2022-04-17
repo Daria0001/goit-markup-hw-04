@@ -58,14 +58,14 @@ a {
 
 .site-nav {
   display: flex;
-  margin-right: 331px;
+  margin-right: 305px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
 .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .link-text {
@@ -87,6 +87,8 @@ a {
   color: #2196f3;
 }
 
+/* Контакты */
+
 .site-nav-link-contacts {
   display: flex;
   margin: 0;
@@ -94,11 +96,19 @@ a {
 }
 
 .link-contacts {
-  padding: 32px 0;
   color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .link-contacts:hover {
@@ -110,7 +120,15 @@ a {
   padding-bottom: 200px;
   background: #2f303a;
   text-align: center;
-  background-image: url(../images/Imgbackground.jpg);
+}
+
+.section {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Imgbackground.jpg");
 }
 
 .hero {
@@ -164,22 +182,6 @@ a {
   background: #f5f4fa;
   border-radius: 4px;
   background-size: contain;
-}
-
-.flex-peculiarities:nth-child(1)::before {
-  background-image: url(../images/img14.jpg);
-}
-
-.flex-peculiarities:nth-child(2)::before {
-  background-image: url(../images/img15.jpg);
-}
-
-.flex-peculiarities:nth-child(3)::before {
-  background-image: url(../images/img16.jpg);
-}
-
-.flex-peculiarities:nth-child(4)::before {
-  background-image: url(../images/img17.jpg);
 }
 
 .container-button {
@@ -360,6 +362,10 @@ button:focus {
   color: #212121;
 }
 
+.person ul {
+  padding-left: 0;
+}
+
 .profession {
   margin: 0;
   font-weight: 400;
@@ -369,9 +375,47 @@ button:focus {
   color: #757575;
 }
 
+.a {
+  fill: #afb1b8;
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+
+.section-clients {
+  margin-bottom: 94px;
+}
+
+.title-clients {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.flex-clients {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.logotype {
+  width: 106px;
+  height: 60px;
+}
+
 .footer {
   background: #2f303a;
   padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .logo-footer {
@@ -392,10 +436,6 @@ button:focus {
   font-weight: 700;
   line-height: 0.83;
   letter-spacing: 0.03em;
-}
-
-.container-address {
-  display: block;
 }
 
 .contact-section-adress {
@@ -420,4 +460,19 @@ button:focus {
   font-weight: 500;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.social-footer {
+  margin-left: 70px;
+}
+
+.text-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
