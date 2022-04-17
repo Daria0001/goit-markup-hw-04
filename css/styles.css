@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.header {
+header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -166,22 +166,19 @@ a {
   margin-top: 0;
 }
 
-.flex-peculiarities {
+.especially {
+  margin-bottom: 30px;
   width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .flex-peculiarities:not(:last-child) {
   margin-right: 30px;
-}
-
-.flex-peculiarities::before {
-  margin-bottom: 30px;
-  display: block;
-  content: "";
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  background-size: contain;
 }
 
 .container-button {
@@ -203,6 +200,12 @@ a {
   justify-content: center;
 }
 
+.flex-button li:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .button {
   padding: 6px 22px;
   font-family: "Roboto";
@@ -214,8 +217,6 @@ a {
   font-weight: 500;
   line-height: 1.62;
   border: 1px solid #000000;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -230,6 +231,11 @@ a {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.element:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .element:nth-child(3n) {
@@ -317,6 +323,7 @@ button:focus {
   margin-right: 30px;
 }
 
+/* Наша команда */
 .section-comand {
   padding: 94px 0;
 }
@@ -341,6 +348,9 @@ button:focus {
 
 .person {
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .person:not(:last-child) {
@@ -349,7 +359,7 @@ button:focus {
 
 .text-comand {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .title-person {
@@ -362,10 +372,6 @@ button:focus {
   color: #212121;
 }
 
-.person ul {
-  padding-left: 0;
-}
-
 .profession {
   margin: 0;
   font-weight: 400;
@@ -375,15 +381,39 @@ button:focus {
   color: #757575;
 }
 
+.icons-commands {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.icons:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icons {
+  padding-bottom: 30px;
+}
+
 .a {
   fill: #afb1b8;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 }
 
+.a:hover,
+.a:focus {
+  fill: #ffffff;
+  background: #2196f3;
+  border-radius: 50%;
+}
+/* Постоянные клиенты */
+
 .section-clients {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .title-clients {
@@ -392,16 +422,43 @@ button:focus {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.18;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .flex-clients {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
+}
+
+.img-a {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.img-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+}
+
+.img-clients:hover,
+.img-clients:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.img-a:not(:last-child) {
+  margin-right: 30px;
 }
 
 .logotype {
@@ -414,8 +471,12 @@ button:focus {
   padding: 60px 0;
 }
 
-.footer-container {
+.container-footer {
   display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo-footer {
@@ -428,6 +489,7 @@ button:focus {
   line-height: 0.83;
   letter-spacing: 0.03em;
 }
+
 .logo-footer span {
   color: #ffffff;
   font-family: Raleway;
@@ -464,10 +526,13 @@ button:focus {
 
 .social-footer {
   margin-left: 70px;
+  padding-top: 10px;
 }
 
 .text-footer {
   font-family: "Roboto";
+  margin-top: 0;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -475,4 +540,31 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.list li {
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #ffffff;
+  width: 44px;
+  height: 44px;
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  background: #2196f3;
+  border-radius: 50%;
 }
