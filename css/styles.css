@@ -111,7 +111,8 @@ header {
   fill: currentColor;
 }
 
-.link-contacts:hover {
+.link-contacts:hover,
+.link-contacts:focus {
   color: #2196f3;
 }
 
@@ -326,6 +327,7 @@ button:focus {
 /* Наша команда */
 .section-comand {
   padding: 94px 0;
+  background: #f5f4fa;
 }
 
 .title-comand {
@@ -413,6 +415,7 @@ button:focus {
 /* Постоянные клиенты */
 
 .section-clients {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -558,9 +561,13 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #ffffff;
   width: 44px;
   height: 44px;
+}
+
+.icons {
+  fill: #ffffff;
+  padding-bottom: 0;
 }
 
 .icon-footer:hover,
